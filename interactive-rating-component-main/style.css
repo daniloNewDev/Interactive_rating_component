@@ -1,0 +1,165 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(216, 12%, 8%);
+        color: hsl(217, 12%, 63%);
+        font-family: 'Outfit', sans-serif;
+}
+
+.card {
+        width: 320px;
+        height: 330px;
+        background-color: hsl(213, 19%, 18%);
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 1;
+}
+
+.card2 {
+        width: 320px;
+        height: 330px;
+        background-color: hsl(213, 19%, 18%);
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 0;
+}
+
+/*fim de body e cards */
+
+.star {
+        width: 35px;
+        height: 35px;
+        background-color: hsl(214, 18%, 26%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+}
+
+.card>h2 {
+        color: #eee;
+        font-weight: 530;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+.card>span {
+        font-size: 0.830em;
+}
+
+.btn {
+        width: 250px;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        margin: 15px auto 10px;
+}
+
+.custom_r_b {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: hsl(214, 18%, 26%);
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease;
+        position: relative;
+
+}
+
+
+.custom_r_b:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: #eee;
+}
+
+.custom_r_b .checkmark {
+        width: calc(100%);
+        height: calc(100%);
+        background-color: hsl(214, 12%, 48%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        position: absolute;
+}
+
+.custom_r_b input {
+        display: none;
+}
+
+.custom_r_b input:checked+.checkmark {
+        opacity: 1;
+}
+
+#submit {
+        width: 250px;
+        height: 40px;
+        background-color: hsl(25, 97%, 53%);
+        color: #eee;
+        border: none;
+        border-radius: 35px;
+        font-size: 0.830em;
+        font-weight: 600;
+        margin-top: 15px;
+        box-shadow: 5px 0 10px hsl(212, 25%, 22%);
+}
+
+#submit:hover {
+        background-color: #eee;
+        color: hsl(25, 97%, 53%);
+}
+
+
+/*Fim do primeiro card*/
+
+img {
+        width: 120px;
+        height: 80px;
+        margin-top: 30px;
+}
+
+#result {
+        width: 200px;
+        height: 40px;
+        background-color: hsl(212, 25%, 22%);
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(25, 97%, 53%);
+        border-radius: 30px;
+}
+
+.h2span>h2 {
+        color: #eee;
+        margin-bottom: 15px;
+}
+
+.h2span>span {
+        font-size: 0.808em;
+        font-weight: 500;
+}
+
+.h2span {
+        width: 260px;
+        height: 100px;
+        margin: 0 20px 10px 20px;
+}
