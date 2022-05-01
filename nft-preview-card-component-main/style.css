@@ -1,0 +1,112 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        background-color: hsl(217, 54%, 11%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.card {
+        width: 300px;
+        box-sizing: border-box;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        font-family: 'Outfit', sans-serif;
+        box-shadow: 5px 5px 8px rgba(38, 38, 92, 0.178);
+}
+
+#foto {
+        width: 261px;
+        height: 261px;
+        margin: 18px;
+        border-radius: 15px;
+        position: relative;
+        
+}
+#img {
+        background-image: url("images/image-equilibrium.jpg");
+        background-position: center center;
+        background-size: cover;
+        width: 261px;
+        height: 261px;
+        position: absolute;
+        z-index: 2;
+        border-radius: 15px;
+
+}
+#img:hover {
+        z-index: 0;
+}
+#hov {
+        width: 261px;
+        height: 261px;
+        border-radius: 15px;
+        background-color: hsla(178, 100%, 50%, 0.5);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+h2 {
+        color: hsl(0, 0%, 100%);
+        font-family: 'Outfit', sans-serif;
+}
+h2:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+}
+span {
+        font-size: 15px;
+        color: hsl(215, 32%, 27%);
+}
+section {
+        width: 270px;
+        margin: 0 15px 15px;
+}
+.ethdate {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+}
+
+#eth {
+        font-weight: 600;
+        color: hsl(178, 100%, 50%);
+}
+
+#date {
+        color: hsl(215, 51%, 70%);
+        font-weight: 500;
+}
+
+#footer {
+        width: 270px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0;
+        color: hsl(0, 0%, 100%);
+        font-weight: 200;
+        border-top: 1px solid hsl(215, 51%, 70%);
+}
+strong:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+}
+
+#avatar {
+        width: 30px;
+        margin-left: 0;
+        border: 1px solid #eee;
+        border-radius: 50%;
+}
